@@ -1,0 +1,22 @@
+{
+  "name": "as5899",
+  "version": "1.0.0",
+  "description": "no",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo a"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerrustalker/gerrustalker.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "gerrustalker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gerrustalker/gerrustalker/issues"
+  },
+  "homepage": "https://github.com/gerrustalker/gerrustalker#readme"
+}
