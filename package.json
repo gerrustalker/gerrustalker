@@ -7,8 +7,8 @@
     "test": "echo test"
   },
   "dependencies": {
-    "my_dep": "*"
-  }
+    "firebase-tools": "*"
+  },
   "author": "gerrustalker",
   "license": "ISC",
   "bugs": {
