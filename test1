@@ -1,0 +1,36 @@
+us_anti_cheat_config.discord_webhook = "" -- Посмотри выше, слепой нахуй.
+
+fus_anti_cheat_config.m_log_discord = true -- Читай выше долбоёб.
+
+--[[
+STEAM API
+Вы чё тупые нахуй?
+]]--
+
+fus_anti_cheat_config.steam_api_key = "" -- Выше
+
+fus_anti_cheat_config.kick_banned_family_shared = true -- Кикает нахуй если юзает семейный акк, юзер которого был заблокан.
+fus_anti_cheat_config.kick_all_family_shared = true -- Кикает нахуй если юзает семейный акк. (ставьте на true, будет меньше читаков)
+
+// == INGAME LOGGING CONFIG
+fus_anti_cheat_config.m_log_console = true -- Логи в консоль
+fus_anti_cheat_config.m_log_file = true -- Логи в /data/modernac_log.txt
+
+// == BAN REASON
+fus_anti_cheat_config.m_use_custom_ban_reason = true -- Банит по причине ниже
+fus_anti_cheat_config.m_ban_reason = "[ANTICHEAT BY ANTILOPA] Твою мать ебал весь сервер, пидорас-читераст."
+
+// == DETECTION CONFIG
+fus_anti_cheat_config.m_validate_players = true 
+fus_anti_cheat_config.m_check_file = true 
+fus_anti_cheat_config.m_check_function = true 
+fus_anti_cheat_config.m_check_globals = true 
+fus_anti_cheat_config.m_check_modules = true 
+fus_anti_cheat_config.m_check_cvars = true 
+fus_anti_cheat_config.m_check_synced_cvars = true 
+fus_anti_cheat_config.m_check_external = true 
+fus_anti_cheat_config.m_check_dhtml = true 
+fus_anti_cheat_config.m_check_cleaning_screen = true 
+fus_anti_cheat_config.m_check_detoured_functions = true 
+fus_anti_cheat_config.m_simulate_backdoors = true 
+fus_anti_cheat_config.m_backup_kick_check = true
