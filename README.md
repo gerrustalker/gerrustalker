@@ -3,5 +3,5 @@
 [Главный рикролл](https://stalker.gq/lol) (все остальные редиректят на него)
 
 Рикроллы [Уголочка](https://gmodugolochek.ru/)
-    - [ugolochek/rules](https://stalker.gq/ugolochek/rules)
-    - [ugolochek/test.pdf](https://stalker.gq/ugolochek/test.pdf) (test.pdf.**html**)
+- [ugolochek/rules](https://stalker.gq/ugolochek/rules)
+- [ugolochek/test.pdf](https://stalker.gq/ugolochek/test.pdf) (test.pdf.**html**)
