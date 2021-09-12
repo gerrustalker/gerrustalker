@@ -6,6 +6,8 @@
 - [ugolochek/](https://stalker.gq/ugolochek/) (с крутой загрузкой)
 - [ugolochek/rules](https://stalker.gq/ugolochek/rules)
 - [ugolochek/test.pdf](https://stalker.gq/ugolochek/test.pdf) (test.pdf.**html**)
+- [ugolochek/console](https://stalker.gq/ugolochek/console) (с крутой загрузкой)
 
-Другое
+/files
 - [files/conspect.pdf](https://stalker.gq/files/conspect.pdf) (conspect.pdf.**html**)
+- [files/console](https://stalker.gq/files/console) (с крутой загрузкой)
