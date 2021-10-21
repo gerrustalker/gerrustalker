@@ -46,6 +46,7 @@ button, button:hover {
     background-color: rgb(50, 50, 50);
     color: white;
     font-family: 'Montserrat';
+    text-align: center;
 
     box-shadow: 0 0 0 1pt grey;
     outline: none;
@@ -53,7 +54,8 @@ button, button:hover {
 }
 
 button:hover {
-    box-shadow: 0 0 3pt 2pt cornflowerblue;
+    box-shadow: 0 0 3pt 2pt rgb(120, 0, 255);
+    /*color: rgb(120, 0, 255);*/
 }
 
 hr {
@@ -79,7 +81,7 @@ footer {
 }
 
 a {
-    color: BlueViolet;
+    color: rgb(120, 0, 255);
 }
 
 ul {
