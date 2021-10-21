@@ -1,0 +1,87 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('files/fonts/Montserrat/Montserrat-Medium.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('files/fonts/Montserrat/Montserrat-Bold.ttf');
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Montserrat';
+    text-align: left;
+    font-size: large;
+    color: white;
+}
+
+h1 {
+    font-family: 'Montserrat';
+    /*font-size: large;*/
+    text-align: center;
+    line-height: 20%;
+    color: white;
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-size: large;
+    text-align: center;
+    line-height: 50%;
+    color: gray;
+}
+
+body {
+    /*outline: gray solid 2px;*/
+    background-color: rgb(30, 30, 30);
+}
+/* https://stackoverflow.com/questions/5394116/outline-radius */
+button, button:hover {
+    border: none;
+    border-radius: 5pt;
+    cursor: pointer;
+
+    background-color: rgb(50, 50, 50);
+    color: white;
+    font-family: 'Montserrat';
+
+    box-shadow: 0 0 0 1pt grey;
+    outline: none;
+    transition: .1s;
+}
+
+button:hover {
+    box-shadow: 0 0 3pt 2pt cornflowerblue;
+}
+
+hr {
+    border: none;
+    color: gray;
+
+    background-color: gray;
+    height: 1px;
+}
+
+footer {
+    color: gray;
+    font-family: 'Montserrat';
+    font-size: small;
+    text-align: center;
+
+    /* https://css-tricks.com/snippets/css/fixed-footer/ */
+    position: fixed;
+    left:0px;
+    bottom:10px;
+    height:30px;
+    width:100%;
+}
+
+a {
+    color: BlueViolet;
+}
+
+ul {
+    color: white;
+}
