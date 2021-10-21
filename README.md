@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c1f9a2df-a33b-41f0-a071-cf8bf2b560e1/deploy-status)](https://app.netlify.com/sites/stalkergq/deploys)
+[!(https://api.netlify.com/api/v1/badges/c1f9a2df-a33b-41f0-a071-cf8bf2b560e1/deploy-status)]
 # Рикроллы
 [Главный рикролл](https://stalker.gq/lol) (все остальные редиректят на него)
 
