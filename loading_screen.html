@@ -24,7 +24,7 @@
             return result;
         }
 
-        document.getElementById("servername").textContent = findGetParameter("servername") || "Durka"
+        document.getElementById("servername").textContent = findGetParameter("servername").replace("+", " ") || "Durka"
 
         var descs = [
             "Крутой сервер!", "c0nfuse.ru", "stalker.gq", "exechack.cc крутой чит!!!", "Вставьте описание"
