@@ -1,12 +1,12 @@
 @font-face {
     font-family: Montserrat;
-    src: url('files/fonts/Montserrat/Montserrat-Medium.ttf');
+    src: url('files/fonts/montserrat/Montserrat-Medium.ttf');
     font-weight: normal;
 }
 
 @font-face {
     font-family: Montserrat;
-    src: url('files/fonts/Montserrat/Montserrat-Bold.ttf');
+    src: url('files/fonts/montserrat/Montserrat-Bold.ttf');
     font-weight: bold;
 }
 
@@ -14,6 +14,7 @@ p {
     font-family: 'Montserrat';
     text-align: left;
     font-size: large;
+    line-height: 80%;
     color: white;
 }
 
@@ -58,6 +59,60 @@ button:hover {
     /*color: rgb(120, 0, 255);*/
 }
 
+kbd {
+    padding: 0em 0.5em;
+
+    border: 1px solid;
+    border-radius: 5pt;
+    border-color: rgb(120, 0, 255);
+
+    background-color: rgb(50, 50, 50);
+
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: bold;
+
+    outline: none;
+    text-align: center;
+    text-decoration: solid;
+    /*text-shadow: 0 1px 0 #fff;*/
+}
+
+code {
+    background-color: rgb(50, 50, 50);
+    border-radius: 3px;
+    font-family: consolas;
+    font-size: initial;
+    padding: 0 3px;
+}
+
+code.block {
+    color: white;
+    background-color: rgb(50, 50, 50);
+
+    border: 1px solid;
+    border-radius: 5pt;
+    border-color: rgb(60, 60, 60);
+
+    display: inline-block;
+
+    font-family: consolas;
+    padding: 0 3px;
+
+    white-space: pre-line;
+}
+
+quote {
+    border: 1px solid;
+    border-radius: 5pt;
+    border-color: rgb(60, 60, 60);
+
+    background-color: rgb(50, 50, 50);
+    font-style: italic;
+    padding: 0em 0.2em;
+}
+
 hr {
     border: none;
     color: gray;
@@ -86,4 +141,14 @@ a {
 
 ul {
     color: white;
+}
+
+.unselectable { /* https://stackoverflow.com/questions/3779534/how-do-i-disable-text-selection-with-css-or-javascript */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
 }
