@@ -77,11 +77,18 @@ kbd {
     text-align: center;
     text-decoration: solid;
     /*text-shadow: 0 1px 0 #fff;*/
+
+    transition: .1s;
+    cursor: default;
+}
+
+kbd:hover {
+    box-shadow: 0 0 2pt 1pt rgb(120, 0, 255);
 }
 
 code {
     background-color: rgb(50, 50, 50);
-    border-radius: 3px;
+    border-radius: 2px;
     font-family: consolas;
     font-size: initial;
     padding: 0 3px;
@@ -92,7 +99,7 @@ code.block {
     background-color: rgb(50, 50, 50);
 
     border: 1px solid;
-    border-radius: 5pt;
+    border-radius: 2pt;
     border-color: rgb(60, 60, 60);
 
     display: inline-block;
@@ -107,10 +114,36 @@ quote {
     border: 1px solid;
     border-radius: 5pt;
     border-color: rgb(60, 60, 60);
+    border-left: 10px solid rgb(60, 60, 60);
 
     background-color: rgb(50, 50, 50);
     font-style: italic;
-    padding: 0em 0.2em;
+    padding: 0.1em 0.3em;
+
+    transition: .1s;
+}
+
+quote.block {
+    border: 1px solid;
+    border-radius: 3pt;
+    border-color: rgb(60, 60, 60);
+    border-left: 10px solid rgb(60, 60, 60);
+
+    background-color: rgb(50, 50, 50);
+    font-style: italic;
+    padding: 0.1em 0.3em;
+
+    display: inline-block;
+    white-space: pre-line;
+
+    font-family: 'Montserrat';
+    color: white;
+
+    transition: .1s;
+}
+
+quote:hover {
+    box-shadow: 0 0 2pt 1pt rgb(120, 0, 255);
 }
 
 hr {
