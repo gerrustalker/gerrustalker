@@ -125,24 +125,28 @@
                 top: 0;
                 left: 0;
             }
+
+
         </style>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <!--<audio id="music" src="https://stalker.gq/files/sound/methamphetamine.solutions.mp3" autoplay loop onplaying="" preload="auto" style="display:none"></audio> not working :(-->
     </head>
 
     <body>
         <main>
             <!-- copy discord tag to clipboard was pasted from c0nfuse.ru -->
             <input id="discord-tag" type="input" value ="sayori.chr#9927" style="position: absolute;opacity: 0;pointer-events: none;">
-            <div class="profile" class="animate__animated animate__bounce">
+            <div class="profile">
                 <img src="/files/image/mypfp.jpg" class="avatar">
                 <h1>Lenofag-2000</h1>
-                <h2 id="aka-typed"></h2>
+                <h2><span id="aka-typed"></span></h2>
 
-                <a onclick="copyTagToClipboard()" id="discord" style="cursor: pointer;">
+                <a onclick="copyTagToClipboard()" id="discord" style="cursor: pointer;" title="Click to copy to clipboard">
                     <img draggable=false src="https://cdn.discordapp.com/embed/avatars/0.png" class="emoji">
                     <span>sayori.chr#9927</span>
                 </a>
@@ -173,12 +177,12 @@
 			}
 
             var typed = new Typed("#aka-typed", {
-                strings: ["aka Andrey Stalker[5899]", "aka gerrustalker", "aka gerrusmangame", "aka sayori.chr"],
+                strings: ["aka Andrey Stalker[5899]", "aka gerrustalker", "aka gerrusmangame", "aka sayori.chr", "Garry's Mod Lua Coder", "Wire Expression 2 Coder"],
                 typeSpeed: 40,
                 backSpeed: 40,
                 backDelay: 700,
                 smartBackspace: true,
-                showCursor: false,
+                showCursor: true,
                 loop: true
             });
 
