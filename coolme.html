@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            @font-face {
+                font-family: Montserrat;
+                src: url("/files/fonts/montserrat/Montserrat-Medium.ttf");
+                font-weight: normal;
+            }
+
+            body {
+                color: white;
+
+                /*background: linear-gradient(0deg, rgb(0, 0, 0), rgb(20, 20, 20), rgb(20, 20, 20));*/
+                background: linear-gradient(-45deg, #000000, #101010, #202020, #303030);
+                background-size: 400% 400%;
+                animation: gradient 25s ease infinite;
+                height: 100vh;
+
+                font-family: Montserrat, "Roboto", sans-serif;
+
+                margin: 0;
+                display: grid;
+
+                grid-auto-rows: auto;
+                grid-template-areas: ". a .";
+            }
+
+            main {
+                width: 100%;
+                margin: 0 auto;
+                max-width: 1000px;
+                grid-area: a;
+                align-self: center;
+                justify-self: center;
+                text-align: center;
+            }
+
+            .profile {
+                margin-bottom: 8px;
+                animation: backInDown;
+                animation-duration: 2s;
+            }
+
+            .profile img.avatar {
+                border-radius: 50%;
+                border: 2px solid;
+                border-color: rgb(120, 0, 255);
+
+                height: 128px;
+	            width: 128px;
+            }
+
+            .profile img.emoji {
+                border-radius: 100%;
+
+                height: 24px;
+                width: 24px;
+
+                margin-right: .3em;
+            }
+
+            .profile img.emoji:not(:last-child) {
+                margin-right: .3em;
+            }
+
+            .profile h1 {
+                line-height: 50%;
+            }
+
+            .profile h2 {
+                color: gray;
+                line-height: 60%;
+
+                font-size: large;
+            }
+
+            .profile a {
+                color: rgb(120, 0, 255);
+                text-decoration: none;
+
+                display: inline-flex;
+                flex-direction: row;
+                align-items: center;
+
+                margin-left: .4em;
+
+                transition: .1s;
+            }
+
+            .profile a:hover {
+                text-shadow: 1px 1px;
+                text-decoration: none;
+            }
+
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            #particles-js canvas {
+                display: block;
+                vertical-align: bottom;
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+                opacity: 1;
+                -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+                transition: opacity .8s ease, transform 1.4s ease
+            }
+
+            #particles-js {
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                z-index: -10;
+                top: 0;
+                left: 0;
+            }
+        </style>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+
+    <body>
+        <main>
+            <!-- copy discord tag to clipboard was pasted from c0nfuse.ru -->
+            <input id="discord-tag" type="input" value ="sayori.chr#9927" style="position: absolute;opacity: 0;pointer-events: none;">
+            <div class="profile" class="animate__animated animate__bounce">
+                <img src="/files/image/mypfp.jpg" class="avatar">
+                <h1>Lenofag-2000</h1>
+                <h2 id="aka-typed"></h2>
+
+                <a onclick="copyTagToClipboard()" id="discord" style="cursor: pointer;">
+                    <img draggable=false src="https://cdn.discordapp.com/embed/avatars/0.png" class="emoji">
+                    <span>sayori.chr#9927</span>
+                </a>
+                
+                <a href="https://github.com/gerrustalker/" target="_blank">
+                    <img draggable=false src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" class="emoji">
+                    <span>gerrustalker</span>
+                </a>
+
+                <a href="https://steamcommunity.com/id/gerrusmangame" target="_blank">
+                    <img draggable=false src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/512px-Steam_icon_logo.svg.png" class="emoji">
+                    <span>gerrusmangame</span>
+                </a>
+            </div>
+        </main>
+
+        <script>
+			const input = document.querySelector("#discord-tag")
+			const tag = document.querySelector("#discord span:last-child")
+			const original = tag.textContent;
+			function copyTagToClipboard() {
+				input.select();
+				document.execCommand("copy");
+				
+                //alert("Tag copied to your clipboard")
+				tag.textContent = "Copied to your clipboard!"
+				setTimeout(() => tag.textContent = original, 3000)
+			}
+
+            var typed = new Typed("#aka-typed", {
+                strings: ["aka Andrey Stalker[5899]", "aka gerrustalker", "aka gerrusmangame", "aka sayori.chr"],
+                typeSpeed: 40,
+                backSpeed: 40,
+                backDelay: 700,
+                smartBackspace: true,
+                showCursor: false,
+                loop: true
+            });
+
+            particlesJS.load("particles-js", "/files/json/particles.json", function() {
+                console.log("particles.js loaded from /files/json/particles.json. yay!");
+            });
+        </script>
+        <div id="particles-js"></div>
+    </body>
+</html>
