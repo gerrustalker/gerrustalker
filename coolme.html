@@ -47,9 +47,15 @@
                 border-radius: 50%;
                 border: 2px solid;
                 border-color: rgb(120, 0, 255);
+                
+                transition: .5s;
 
                 height: 128px;
 	            width: 128px;
+            }
+
+            .profile img.avatar:hover {
+                box-shadow: 0 0 2pt 2pt rgb(120, 0, 255);
             }
 
             .profile img.emoji {
@@ -77,7 +83,7 @@
             }
 
             .profile a {
-                color: rgb(120, 0, 255);
+                color: rgb(200, 150, 255);
                 text-decoration: none;
 
                 display: inline-flex;
@@ -132,9 +138,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="https://kelvinau.github.io/circular-audio-wave/dist/circular-audio-wave.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-        <!--<audio id="music" src="https://stalker.gq/files/sound/methamphetamine.solutions.mp3" autoplay loop onplaying="" preload="auto" style="display:none"></audio> not working :(-->
+        <title>Andrey Stalker[5899] aka Lenofag-2000 | Index Page</title>
+
+        <!-- music taken from methamphetamine.solutions (and some ideas...)-->
+        <audio id="music" src="/files/sound/methamphetamine.solutions.mp3" autoplay loop onplaying="" preload="auto" style="display:none"></audio>
     </head>
 
     <body>
@@ -142,7 +152,7 @@
             <!-- copy discord tag to clipboard was pasted from c0nfuse.ru -->
             <input id="discord-tag" type="input" value ="sayori.chr#9927" style="position: absolute;opacity: 0;pointer-events: none;">
             <div class="profile">
-                <img src="/files/image/mypfp.jpg" class="avatar">
+                <img src="/files/image/mypfp.jpg" class="avatar" onclick="if (!music.paused) {music.pause()} else {music.play()}" style="cursor: pointer">
                 <h1>Lenofag-2000</h1>
                 <h2><span id="aka-typed"></span></h2>
 
@@ -163,7 +173,7 @@
             </div>
         </main>
 
-        <script>
+        <script>    
 			const input = document.querySelector("#discord-tag")
 			const tag = document.querySelector("#discord span:last-child")
 			const original = tag.textContent;
@@ -178,8 +188,8 @@
 
             var typed = new Typed("#aka-typed", {
                 strings: ["aka Andrey Stalker[5899]", "aka gerrustalker", "aka gerrusmangame", "aka sayori.chr", "Garry's Mod Lua Coder", "Wire Expression 2 Coder"],
-                typeSpeed: 40,
-                backSpeed: 40,
+                typeSpeed: 60,
+                backSpeed: 55,
                 backDelay: 700,
                 smartBackspace: true,
                 showCursor: true,
