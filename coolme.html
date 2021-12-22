@@ -45,10 +45,12 @@
 
             .profile img.avatar {
                 border-radius: 50%;
-                border: 2px solid;
-                border-color: rgb(120, 0, 255);
+                border: 1px solid rgb(120, 0, 255);;
+
+
+                outline: 1px solid rgb(120, 0, 255);
                 
-                transition: .5s;
+                transition: .2s;
 
                 height: 128px;
 	            width: 128px;
@@ -96,7 +98,7 @@
             }
 
             .profile a:hover {
-                text-shadow: 1px 1px;
+                text-shadow: 0 0 10px #fff;
                 text-decoration: none;
             }
 
@@ -131,8 +133,6 @@
                 top: 0;
                 left: 0;
             }
-
-
         </style>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -148,12 +148,12 @@
     </head>
 
     <body>
+        <input id="discord-tag" type="input" value ="sayori.chr#9927" style="position: absolute;opacity: 0;pointer-events: none;">
         <main>
             <!-- copy discord tag to clipboard was pasted from c0nfuse.ru -->
-            <input id="discord-tag" type="input" value ="sayori.chr#9927" style="position: absolute;opacity: 0;pointer-events: none;">
             <div class="profile">
                 <img src="/files/image/mypfp.jpg" class="avatar" onclick="if (!music.paused) {music.pause()} else {music.play()}" style="cursor: pointer">
-                <h1>Lenofag-2000</h1>
+                <h1 id="lolkek">Lenofag-2000</h1>
                 <h2><span id="aka-typed"></span></h2>
 
                 <a onclick="copyTagToClipboard()" id="discord" style="cursor: pointer;" title="Click to copy to clipboard">
@@ -170,10 +170,17 @@
                     <img draggable=false src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/512px-Steam_icon_logo.svg.png" class="emoji">
                     <span>gerrusmangame</span>
                 </a>
+
+                <br><br>
+                <a href="/">
+                    <span>Back to website</span>
+                </a>
             </div>
         </main>
 
-        <script>    
+        <script>
+            lolkek.onclick = function() {document.getElementsByTagName("body")[0].style["background-image"] = "url('/files/image/troit5ky.png')"; console.log("troit5ky красивый")} // :)
+
 			const input = document.querySelector("#discord-tag")
 			const tag = document.querySelector("#discord span:last-child")
 			const original = tag.textContent;
@@ -187,10 +194,10 @@
 			}
 
             var typed = new Typed("#aka-typed", {
-                strings: ["aka Andrey Stalker[5899]", "aka gerrustalker", "aka gerrusmangame", "aka sayori.chr", "Garry's Mod Lua Coder", "Wire Expression 2 Coder"],
+                strings: ["aka Andrey Stalker[5899]", "aka gerruslol", "aka gerrustalker", "aka gerrusmangame", "aka sayori.chr", "Garry's Mod Lua Developer", "Wire Expression 2 Developer"],
                 typeSpeed: 60,
                 backSpeed: 55,
-                backDelay: 700,
+                backDelay: 900,
                 smartBackspace: true,
                 showCursor: true,
                 loop: true
