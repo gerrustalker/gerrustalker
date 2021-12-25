@@ -1,6 +1,6 @@
 {
     "name": "stalker.gq",
-    "version": "1.0",
+    "version": "1.0.0",
     "description": "api on static website lol",
     "main": "functions/server.js",
     "scripts": {
