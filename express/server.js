@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 const router = express.Router();
 router.get('/', (req, res) => {
     //if (req.query.url) {res.redirect(req.query.url)} else {res.status(400).send("no url provided")}
-    var idAddress = request.connection.remoteAddress;
+    var idAddress = req.connection.remoteAddress;
     res.send(200, "ti lox, " + idAddress)
     res.end()
 });
