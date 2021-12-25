@@ -5,11 +5,11 @@
     "main": "functions/server.js",
     "scripts": {
         "build": "netlify-lambda build express",
-        "start": "nodemon server-local.js"
+        "start": "nodemon server.local.js"
     },
     "keywords": [
-    "netlify",
-    "express.js"
+        "netlify",
+        "express.js"
     ],
     "author": "gerrustalker",
     "devDependencies": {
