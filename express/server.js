@@ -6,12 +6,13 @@ const app = express();
 const bodyParser = require('body-parser');
 
 const router = express.Router();
-router.get('/getgood/', (req, res) => {
-    res.redirect('/coolme.html')
+router.get('/', (req, res) => {
+    if (req.query.url) {res.redirect(req.query.url)} else {res.status(400).send("no url provided")}
 });
 
 app.use(bodyParser.json());
-app.use('/functions/server', router);  // path must route to lambda
+app.use('/.netlify/functions/server', router);  // path must route to lambda
+app.use('/', (req, res) => res.sendFile(path.join(__dirname, '../redirect/index.html')));
 
 module.exports = app;
 module.exports.handler = serverless(app);
